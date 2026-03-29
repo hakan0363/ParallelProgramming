@@ -1,5 +1,5 @@
 def remove_duplicates(seq: list) -> list:
-    res = set(seq)
+    res = list(set(seq))
     return res
 
 def list_counts(seq : list) -> dict:
