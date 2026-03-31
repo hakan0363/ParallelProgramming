@@ -1,3 +1,5 @@
+from typing import Tuple, Dict
+
 custom_power = lambda x=0, /, e=1: (x ** e)
 
 
@@ -31,7 +33,7 @@ def custom_equation(
     return float(result)
 
 
-def fn_w_counter() -> tuple[int, dict[str, int]]:
+def fn_w_counter() -> Tuple[int, Dict[str, int]]:
     if getattr(fn_w_counter, "count", None) is None:
         fn_w_counter.count = 0
 
